@@ -1,69 +1,34 @@
-# Getting Started with Create React App
+# Clone Youtube
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Empezamos creando la carpeta del proyecto a travez de npx-create-react-app
+Instalamos dependencias:
+1-MaterialUI
+2-Axios
+3-RouterDOM
+4-Icons
 
-## Available Scripts
+## Primeros Pasos
 
-In the project directory, you can run:
+Ahora empezamos a darle una estructura mas seria a nuestro proyecto,
+borramos la carpeta src que nos instala npx por defecto y creamos una nueva con un Index.js, un App.js y un Index.css
 
-### `npm start`
+### `BrowserRouter,Routes,Route`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Creamos un BrowserRouter que contenga un Box (MaterialUI), la cual va tener un Routes, con Route, las cuales van a linkear nuestras rutas con nuestros futuros componentes.abs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `Components`
 
-### `npm test`
+Creamos una carpeta components con los componentes que usaremos en nuestro clone App. Los cuales son un Feed, un Navbar, un VideoDetail, un ChannelDetail y un SearchFeed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para mayor prolijidad, usaremos un index.js donde exportaremos cada componente, el cual nos permite ahorrar y que nuestro codigo sea mas limpio, ya que importamos una sola vez, desde el index dichos componentes.
 
-### `npm run build`
+### `Navbar,SideBar,Feed,Searchbar`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Creamos los componentes para ir dandole forma a nuestra app. En el Navbar incluimos el logo, y una barra de busqueda. Ya en el cuerpo de la App, agregamos un sidebar donde mapeamos las categorias, y los videos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Axios`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Gracias a RapidApi, usando [https://rapidapi.com/ytdlfree/api/youtube-v31](https://rapidapi.com/ytdlfree/api/youtube-v31), utilizamos endpoints para la navegabilidad de la pagina.
 
 ### `npm run build` fails to minify
 
